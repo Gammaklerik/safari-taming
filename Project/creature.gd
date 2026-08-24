@@ -54,12 +54,12 @@ func _ready() -> void:
 	for s in gm.speeds:
 		if s.get("name") == speed:
 			speed_min = s.get("speed")
-	for v in gm.speed_variability:
+	for v in gm.speed_variabilities:
 		if v.get("name") == speed_variability:
 			speed_max = speed_min + v.get("variability")
 	for r in gm.reversal_chances:
 		if r.get("name") == reversal_chance:
-			reversal_chance = r.get("chance")
+			reverse_chance = r.get("chance")
 	for c in gm.speed_changes:
 		if c.get("name") == speed_change:
 			speed_change_chance = c.get("chance")

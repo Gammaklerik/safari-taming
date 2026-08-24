@@ -9,7 +9,7 @@ extends Node
 
 var speeds : Array[Dictionary] = [{"name": "Very Slow", "speed": 0.75}, {"name": "Slow", "speed": 1.5}, {"name": "Medium", "speed": 2.5}, {"name": "Fast", "speed": 4.0}, {"name": "Very Fast", "speed": 6.0}, {"name": "Impossibly Fast", "speed": 8.0}]
 var speed_variabilities : Array[Dictionary] = [{"name": "Narrow", "variability": 0.5}, {"name": "Average", "variability": 1.5}, {"name": "Wide", "variability": 3.0}]
-var reversal_chances : Array[Dictionary] = [{"name": "Playful", "chance": 0.15}, {"name": "Dodgy", "chance": 0.30}, {"name": "Evasive", "variability": 0.45}, {"name": "Eratic", "variability": 0.70}]
+var reversal_chances : Array[Dictionary] = [{"name": "Playful", "chance": 0.15}, {"name": "Dodgy", "chance": 0.30}, {"name": "Evasive", "chance": 0.45}, {"name": "Eratic", "chance": 0.70}]
 var speed_changes : Array[Dictionary] = [{"name": "Consistent", "chance": 0.10}, {"name": "Unpredictable", "chance": 0.30}, {"name": "Abrupt", "chance": 0.50}, {"name": "Bizarre", "chance": 0.80}]
 var temperments : Array[Dictionary] = [{"name": "Aloof", "reversal": 1.0, "speed": 1.0, "speed_change": 1.0}, {"name": "Blunt", "reversal": 1.0, "speed": 1.0, "speed_change": 1.0}, {"name": "Brave", "reversal": 0.9, "speed": 1.1, "speed_change": 1.0}, {"name": "Clumsy", "reversal": 1.0, "speed": 0.9, "speed_change": 1.1}, {"name": "Deceptive", "reversal": 1.1, "speed": 1.0, "speed_change": 0.9}, {"name": "Docile", "reversal": 1.0, "speed": 1.0, "speed_change": 1.0}, {"name": "Hasty", "reversal": 1.0, "speed": 1.1, "speed_change": 0.9}, {"name": "Patient", "reversal": 1.1, "speed": 0.9, "speed_change": 1.0}, {"name": "Rash", "reversal": 0.9, "speed": 1.0, "speed_change": 1.1}]
 

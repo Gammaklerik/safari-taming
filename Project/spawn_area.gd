@@ -71,7 +71,7 @@ func spawn(amount : int) -> void:
 func _on_detection_area_body_entered(body: Node2D) -> void:
 	if body.name == "player":
 		spawning = true
-		if $spawns.get_child_count() > 0:
+		if $spawns.get_child_count() == 0:
 			spawn(max_spawn_amount)
 
 func _on_detection_area_body_exited(body: Node2D) -> void:
