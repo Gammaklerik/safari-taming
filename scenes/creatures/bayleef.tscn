@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://stajvpl6imej"]
+
+[ext_resource type="PackedScene" uid="uid://c1xap4mut873k" path="res://scenes/templates/creature_template.tscn" id="1_5at7j"]
+[ext_resource type="Texture2D" uid="uid://cbj4rr7haxrry" path="res://assets/sprites/placeholders/bayleef.png" id="2_7adal"]
+
+[node name="bayleef" unique_id=62082178 instance=ExtResource("1_5at7j")]
+species = "Bayleef"
+type_1 = "Nature"
+type_2 = "Nature"
+speed_min = 1.0
+speed_max = 3.0
+reverse_chance = 0.1
+speed_change_chance = 0.35000000000000003
+normal_sprite = ExtResource("2_7adal")
+shiny_sprite = ExtResource("2_7adal")

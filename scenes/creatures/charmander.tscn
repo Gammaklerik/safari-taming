@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://4uvhvdayr6iq"]
+
+[ext_resource type="PackedScene" uid="uid://c1xap4mut873k" path="res://scenes/templates/creature_template.tscn" id="1_rcivr"]
+[ext_resource type="Texture2D" uid="uid://c0qcm7skkfrcl" path="res://assets/sprites/placeholders/charmander.png" id="2_ss8rw"]
+
+[node name="charmander" unique_id=62082178 instance=ExtResource("1_rcivr")]
+species = "Charmander"
+type_1 = "Fire"
+type_2 = "Fire"
+speed_min = 1.75
+speed_max = 2.0
+reverse_chance = 0.15000000000000002
+speed_change_chance = 1.0
+normal_sprite = ExtResource("2_ss8rw")
+shiny_sprite = ExtResource("2_ss8rw")

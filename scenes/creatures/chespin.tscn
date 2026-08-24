@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ccob7agjx2xuj"]
+
+[ext_resource type="PackedScene" uid="uid://c1xap4mut873k" path="res://scenes/templates/creature_template.tscn" id="1_odmbh"]
+[ext_resource type="Texture2D" uid="uid://c0lm1g1y7d1e8" path="res://assets/sprites/placeholders/chespin.png" id="2_kn3xq"]
+
+[node name="chespin" unique_id=62082178 instance=ExtResource("1_odmbh")]
+species = "Chespin"
+type_1 = "Nature"
+type_2 = "Nature"
+speed_min = 0.5
+speed_max = 1.5
+reverse_chance = 0.3
+speed_change_chance = 0.18000000000000002
+normal_sprite = ExtResource("2_kn3xq")
+shiny_sprite = ExtResource("2_kn3xq")

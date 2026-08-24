@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://ceqvo5chi3pv5"]
+
+[ext_resource type="Script" uid="uid://cqhlwcthgws1t" path="res://spawn_area.gd" id="1_dk0di"]
+
+[node name="spawn_area_01" type="Area2D" unique_id=884397936]
+script = ExtResource("1_dk0di")
+
+[node name="shape" type="CollisionShape2D" parent="." unique_id=335096502]
+
+[node name="detection_area" type="Area2D" parent="." unique_id=369134478]
+
+[node name="shape" type="CollisionShape2D" parent="detection_area" unique_id=488642905]
+debug_color = Color(0.6302305, 0.530046, 0, 0.41960785)
+
+[node name="spawns" type="Node2D" parent="." unique_id=2017783639]
+
+[node name="spawn_timer" type="Timer" parent="." unique_id=301698344]
+one_shot = true
+
+[connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="detection_area" to="." method="_on_detection_area_body_exited"]
+[connection signal="timeout" from="spawn_timer" to="." method="_on_spawn_timer_timeout"]

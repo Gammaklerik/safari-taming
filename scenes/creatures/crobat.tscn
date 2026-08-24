@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cg3jyi2xby54p"]
+
+[ext_resource type="PackedScene" uid="uid://c1xap4mut873k" path="res://scenes/templates/creature_template.tscn" id="1_j1sgy"]
+[ext_resource type="Texture2D" uid="uid://cjjxsqumwbeyi" path="res://assets/sprites/placeholders/crobat.png" id="2_gp3r1"]
+
+[node name="crobat" unique_id=62082178 instance=ExtResource("1_j1sgy")]
+species = "Crobat"
+type_1 = "Venom"
+type_2 = "Air"
+speed_min = 4.5
+speed_max = 7.0
+reverse_chance = 0.2
+speed_change_chance = 0.45
+normal_sprite = ExtResource("2_gp3r1")
+shiny_sprite = ExtResource("2_gp3r1")

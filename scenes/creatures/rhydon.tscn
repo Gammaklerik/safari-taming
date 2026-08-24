@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://crua6msmlc10c"]
+
+[ext_resource type="PackedScene" uid="uid://c1xap4mut873k" path="res://scenes/templates/creature_template.tscn" id="1_5p8ip"]
+[ext_resource type="Texture2D" uid="uid://dqpasx15d7die" path="res://assets/sprites/placeholders/rhydon.png" id="2_x2u4y"]
+
+[node name="rhydon" unique_id=62082178 instance=ExtResource("1_5p8ip")]
+species = "Rhydon"
+type_1 = "Earth"
+type_2 = "Earth"
+speed_min = 1.0
+speed_max = 1.5
+reverse_chance = 0.4
+speed_change_chance = 0.75
+normal_sprite = ExtResource("2_x2u4y")
+shiny_sprite = ExtResource("2_x2u4y")

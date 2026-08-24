@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bhrxlllqa2t8k"]
+
+[ext_resource type="PackedScene" uid="uid://c1xap4mut873k" path="res://scenes/templates/creature_template.tscn" id="1_taqet"]
+[ext_resource type="Texture2D" uid="uid://02lawip3n1j6" path="res://assets/sprites/placeholders/lotad.png" id="2_yft51"]
+
+[node name="lotad" unique_id=1624427965 instance=ExtResource("1_taqet")]
+species = "Lotad"
+type_1 = "Water"
+type_2 = "Nature"
+speed_min = 1.5
+speed_max = 2.5
+reverse_chance = 0.25
+speed_change_chance = 0.1
+normal_sprite = ExtResource("2_yft51")
+shiny_sprite = ExtResource("2_yft51")

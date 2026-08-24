@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://oga15si8ivnj"]
+
+[ext_resource type="Texture2D" uid="uid://e3bto8tyv080" path="res://assets/sprites/star.png" id="1_ojo0p"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ltalx"]
+font_size = 12
+
+[node name="capture_01" type="Panel" unique_id=1119308564]
+custom_minimum_size = Vector2(243, 50)
+
+[node name="sprite" type="TextureRect" parent="." unique_id=1889715282]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 6.0
+offset_top = -19.25
+offset_right = 44.5
+offset_bottom = 19.25
+grow_vertical = 2
+expand_mode = 1
+
+[node name="name" type="Label" parent="." unique_id=1871149566]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -74.0
+offset_top = -8.5
+offset_right = 20.0
+offset_bottom = 8.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "[creature name]"
+label_settings = SubResource("LabelSettings_ltalx")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="stars" type="HBoxContainer" parent="." unique_id=1156092477]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -30.0
+offset_top = -7.5
+offset_bottom = 7.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/separation = 0
+alignment = 2
+
+[node name="star_01" type="TextureRect" parent="stars" unique_id=310376450]
+visible = false
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+texture = ExtResource("1_ojo0p")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="star_02" type="TextureRect" parent="stars" unique_id=1525729156]
+visible = false
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+texture = ExtResource("1_ojo0p")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="star_03" type="TextureRect" parent="stars" unique_id=658596819]
+visible = false
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+texture = ExtResource("1_ojo0p")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="star_04" type="TextureRect" parent="stars" unique_id=962932426]
+visible = false
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+texture = ExtResource("1_ojo0p")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="star_05" type="TextureRect" parent="stars" unique_id=2034194026]
+visible = false
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+texture = ExtResource("1_ojo0p")
+expand_mode = 1
+stretch_mode = 4

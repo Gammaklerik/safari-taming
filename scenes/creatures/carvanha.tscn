@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ds01uumkahvet"]
+
+[ext_resource type="PackedScene" uid="uid://c1xap4mut873k" path="res://scenes/templates/creature_template.tscn" id="1_o0ksb"]
+[ext_resource type="Texture2D" uid="uid://bfrswnsgq3j4g" path="res://assets/sprites/placeholders/carvanha.png" id="2_5oa06"]
+
+[node name="carvanha" unique_id=62082178 instance=ExtResource("1_o0ksb")]
+species = "Carvanha"
+type_1 = "Water"
+type_2 = "Void"
+speed_min = 3.0
+speed_max = 4.0
+reverse_chance = 0.2
+speed_change_chance = 0.5
+normal_sprite = ExtResource("2_5oa06")
+shiny_sprite = ExtResource("2_5oa06")

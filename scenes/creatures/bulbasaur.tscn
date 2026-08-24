@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cy3xppkkttblu"]
+
+[ext_resource type="PackedScene" uid="uid://c1xap4mut873k" path="res://scenes/templates/creature_template.tscn" id="1_mp504"]
+[ext_resource type="Texture2D" uid="uid://8l4d12dkafsd" path="res://assets/sprites/placeholders/bulbasaur.png" id="2_bnupw"]
+
+[node name="bulbasaur" unique_id=62082178 instance=ExtResource("1_mp504")]
+species = "Bulbasaur"
+type_1 = "Nature"
+type_2 = "Venom"
+speed_min = 2.0
+speed_max = 3.0
+reverse_chance = 0.1
+speed_change_chance = 0.2
+normal_sprite = ExtResource("2_bnupw")
+shiny_sprite = ExtResource("2_bnupw")

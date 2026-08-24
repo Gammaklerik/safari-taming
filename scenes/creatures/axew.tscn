@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bqiai6bdlsmi8"]
+
+[ext_resource type="PackedScene" uid="uid://c1xap4mut873k" path="res://scenes/templates/creature_template.tscn" id="1_w3wgb"]
+[ext_resource type="Texture2D" uid="uid://cfj7ef6xmtl6x" path="res://assets/sprites/placeholders/axew.png" id="2_agsu5"]
+
+[node name="axew" unique_id=62082178 instance=ExtResource("1_w3wgb")]
+species = "Axew"
+type_1 = "Normal"
+type_2 = "Normal"
+speed_min = 1.0
+speed_max = 2.5
+reverse_chance = 0.1
+speed_change_chance = 0.25
+normal_sprite = ExtResource("2_agsu5")
+shiny_sprite = ExtResource("2_agsu5")

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b4qtlym0e3ly6"]
+
+[ext_resource type="PackedScene" uid="uid://c1xap4mut873k" path="res://scenes/templates/creature_template.tscn" id="1_5itl3"]
+[ext_resource type="Texture2D" uid="uid://bylvtbyf8tl1h" path="res://assets/sprites/placeholders/bisharp.png" id="2_pg2wb"]
+
+[node name="bisharp" unique_id=62082178 instance=ExtResource("1_5itl3")]
+species = "Bisharp"
+type_1 = "Metal"
+type_2 = "Metal"
+speed_min = 1.5
+speed_max = 4.0
+reverse_chance = 0.18000000000000002
+speed_change_chance = 0.25
+normal_sprite = ExtResource("2_pg2wb")
+shiny_sprite = ExtResource("2_pg2wb")

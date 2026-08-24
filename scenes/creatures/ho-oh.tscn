@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://utku20csdff6"]
+
+[ext_resource type="PackedScene" uid="uid://c1xap4mut873k" path="res://scenes/templates/creature_template.tscn" id="1_05tvu"]
+[ext_resource type="Texture2D" uid="uid://bk3vj2ed75fqc" path="res://assets/sprites/placeholders/ho-oh.png" id="2_mjbfe"]
+
+[node name="ho-oh" unique_id=62082178 instance=ExtResource("1_05tvu")]
+species = "Ho-Oh"
+type_1 = "Fire"
+type_2 = "Air"
+speed_min = 3.5
+speed_max = 8.0
+reverse_chance = 0.55
+speed_change_chance = 0.45
+normal_sprite = ExtResource("2_mjbfe")
+shiny_sprite = ExtResource("2_mjbfe")

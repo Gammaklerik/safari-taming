@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c2x14nypoep4g"]
+
+[ext_resource type="PackedScene" uid="uid://c1xap4mut873k" path="res://scenes/templates/creature_template.tscn" id="1_66sqk"]
+[ext_resource type="Texture2D" uid="uid://dcx6sjmvn14ps" path="res://assets/sprites/placeholders/alakazam.png" id="2_swuej"]
+
+[node name="alakazam" unique_id=62082178 instance=ExtResource("1_66sqk")]
+species = "Alakazam"
+type_1 = "Radiant"
+type_2 = "Radiant"
+speed_min = 2.0
+speed_max = 3.5
+reverse_chance = 0.4
+speed_change_chance = 0.75
+normal_sprite = ExtResource("2_swuej")
+shiny_sprite = ExtResource("2_swuej")

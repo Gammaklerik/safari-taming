@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://c1xap4mut873k"]
+
+[ext_resource type="Script" uid="uid://dqt8sybmx2d1f" path="res://creature.gd" id="1_mcvmj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_amxty"]
+radius = 11.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ehkex"]
+radius = 22.022715
+
+[node name="creature" type="CharacterBody2D" unique_id=1624427965]
+script = ExtResource("1_mcvmj")
+
+[node name="visibility" type="VisibleOnScreenNotifier2D" parent="." unique_id=1935358139]
+
+[node name="sprite" type="Sprite2D" parent="." unique_id=1886378965]
+scale = Vector2(0.35, 0.35)
+
+[node name="cast" type="RayCast2D" parent="." unique_id=678898449]
+target_position = Vector2(52, 0)
+
+[node name="collider" type="CollisionShape2D" parent="." unique_id=326217650]
+shape = SubResource("CircleShape2D_amxty")
+
+[node name="interact_area" type="Area2D" parent="." unique_id=1887470304]
+
+[node name="shape" type="CollisionShape2D" parent="interact_area" unique_id=339046731]
+shape = SubResource("CircleShape2D_ehkex")
+debug_color = Color(0.7260781, 0.7328746, 7.70092e-07, 0.41960785)
+
+[node name="walk_timer" type="Timer" parent="." unique_id=1997395408]
+one_shot = true
+
+[node name="wait_timer" type="Timer" parent="." unique_id=190551623]
+one_shot = true
+
+[node name="despawn_timer" type="Timer" parent="." unique_id=485030137]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="screen_entered" from="visibility" to="." method="_on_visibility_screen_entered"]
+[connection signal="screen_exited" from="visibility" to="." method="_on_visibility_screen_exited"]
+[connection signal="body_entered" from="interact_area" to="." method="_on_interact_area_body_entered"]
+[connection signal="timeout" from="walk_timer" to="." method="_on_walk_timer_timeout"]
+[connection signal="timeout" from="despawn_timer" to="." method="_on_despawn_timer_timeout"]
