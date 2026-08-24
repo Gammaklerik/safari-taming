@@ -7,9 +7,8 @@
 species = "Absol"
 type_1 = "Void"
 type_2 = "Void"
-speed_min = 2.5
-speed_max = 4.0
-reverse_chance = 0.15000000000000002
-speed_change_chance = 0.4
+speed = "Fast"
+speed_variability = "Narrow"
+reversal_chance = "Evasive"
 normal_sprite = ExtResource("2_twlye")
 shiny_sprite = ExtResource("2_twlye")

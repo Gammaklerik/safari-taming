@@ -7,9 +7,9 @@
 species = "Bulbasaur"
 type_1 = "Nature"
 type_2 = "Venom"
-speed_min = 2.0
-speed_max = 3.0
-reverse_chance = 0.1
-speed_change_chance = 0.2
+speed = "Slow"
+speed_variability = "Narrow"
+reversal_chance = "Playful"
+speed_change = "Consistent"
 normal_sprite = ExtResource("2_bnupw")
 shiny_sprite = ExtResource("2_bnupw")

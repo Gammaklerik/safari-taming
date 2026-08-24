@@ -7,9 +7,8 @@
 species = "Crobat"
 type_1 = "Venom"
 type_2 = "Air"
-speed_min = 4.5
-speed_max = 7.0
-reverse_chance = 0.2
-speed_change_chance = 0.45
+speed = "Very Fast"
+reversal_chance = "Evasive"
+speed_change = "Abrupt"
 normal_sprite = ExtResource("2_gp3r1")
 shiny_sprite = ExtResource("2_gp3r1")

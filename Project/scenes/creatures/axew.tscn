@@ -7,9 +7,8 @@
 species = "Axew"
 type_1 = "Normal"
 type_2 = "Normal"
-speed_min = 1.0
-speed_max = 2.5
-reverse_chance = 0.1
-speed_change_chance = 0.25
+speed = "Slow"
+speed_variability = "Wide"
+reversal_chance = "Playful"
 normal_sprite = ExtResource("2_agsu5")
 shiny_sprite = ExtResource("2_agsu5")

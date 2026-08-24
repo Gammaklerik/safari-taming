@@ -8,10 +8,14 @@ extends CharacterBody2D
 @export_enum("Air", "Water", "Earth", "Fire", "Nature", "Fae", "Metal", "Ice", "Electric", "Radiant", "Void", "Spectral", "Venom", "Normal", "Bug") var type_1 : String
 @export_enum("Air", "Water", "Earth", "Fire", "Nature", "Fae", "Metal", "Ice", "Electric", "Radiant", "Void", "Spectral", "Venom", "Normal", "Bug") var type_2 : String
 @export_group("Capture Stats")
-@export_range(0.50, 10.0, 0.01) var speed_min : float = 0.5
-@export_range(0.50, 10.0, 0.01) var speed_max : float = 0.5
-@export_range(0.01, 1.00, 0.01) var reverse_chance : float = 0.01
-@export_range(0.01, 1.00, 0.01) var speed_change_chance : float = 0.01
+@export_enum("Very Slow", "Slow", "Medium", "Fast", "Very Fast", "Impossibly Fast") var speed : String = "Medium"
+@export_enum("Narrow", "Average", "Wide") var speed_variability : String = "Average"
+var speed_min : float = 0.5
+var speed_max : float = 0.5
+@export_enum("Playful", "Dodgy", "Evasive", "Eratic") var reversal_chance : String = "Dodgy"
+var reverse_chance : float = 0.01
+@export_enum("Consistent", "Unpredictable", "Abrupt", "Bizarre") var speed_change : String = "Unpredictable"
+var speed_change_chance : float = 0.01
 var temperment : Dictionary
 var walk_speed : float = 50.0
 var direction : Vector2
@@ -46,6 +50,19 @@ func _ready() -> void:
 	else:
 		is_shiny = false
 		$sprite.texture = normal_sprite
+	
+	for s in gm.speeds:
+		if s.get("name") == speed:
+			speed_min = s.get("speed")
+	for v in gm.speed_variability:
+		if v.get("name") == speed_variability:
+			speed_max = speed_min + v.get("variability")
+	for r in gm.reversal_chances:
+		if r.get("name") == reversal_chance:
+			reversal_chance = r.get("chance")
+	for c in gm.speed_changes:
+		if c.get("name") == speed_change:
+			speed_change_chance = c.get("chance")
 	
 	temperment = gm.temperments[randi_range(0, 8)]
 	speed_min *= temperment.get("speed")

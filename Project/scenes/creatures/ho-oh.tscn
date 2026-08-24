@@ -7,9 +7,8 @@
 species = "Ho-Oh"
 type_1 = "Fire"
 type_2 = "Air"
-speed_min = 3.5
-speed_max = 8.0
-reverse_chance = 0.55
-speed_change_chance = 0.45
+speed = "Impossibly Fast"
+reversal_chance = "Eratic"
+speed_change = "Bizarre"
 normal_sprite = ExtResource("2_mjbfe")
 shiny_sprite = ExtResource("2_mjbfe")

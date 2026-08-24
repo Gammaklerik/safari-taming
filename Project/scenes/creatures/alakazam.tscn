@@ -7,9 +7,8 @@
 species = "Alakazam"
 type_1 = "Radiant"
 type_2 = "Radiant"
-speed_min = 2.0
-speed_max = 3.5
-reverse_chance = 0.4
-speed_change_chance = 0.75
+speed_variability = "Narrow"
+reversal_chance = "Eratic"
+speed_change = "Consistent"
 normal_sprite = ExtResource("2_swuej")
 shiny_sprite = ExtResource("2_swuej")

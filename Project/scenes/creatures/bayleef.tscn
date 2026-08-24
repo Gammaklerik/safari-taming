@@ -7,9 +7,7 @@
 species = "Bayleef"
 type_1 = "Nature"
 type_2 = "Nature"
-speed_min = 1.0
-speed_max = 3.0
-reverse_chance = 0.1
-speed_change_chance = 0.35000000000000003
+speed = "Slow"
+speed_change = "Consistent"
 normal_sprite = ExtResource("2_7adal")
 shiny_sprite = ExtResource("2_7adal")

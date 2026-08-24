@@ -7,9 +7,8 @@
 species = "Bisharp"
 type_1 = "Metal"
 type_2 = "Metal"
-speed_min = 1.5
-speed_max = 4.0
-reverse_chance = 0.18000000000000002
-speed_change_chance = 0.25
+speed = "Fast"
+speed_variability = "Wide"
+reversal_chance = "Evasive"
 normal_sprite = ExtResource("2_pg2wb")
 shiny_sprite = ExtResource("2_pg2wb")

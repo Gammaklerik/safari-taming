@@ -7,9 +7,9 @@
 species = "Rhydon"
 type_1 = "Earth"
 type_2 = "Earth"
-speed_min = 1.0
-speed_max = 1.5
-reverse_chance = 0.4
-speed_change_chance = 0.75
+speed = "Very Slow"
+speed_variability = "Narrow"
+reversal_chance = "Eratic"
+speed_change = "Abrupt"
 normal_sprite = ExtResource("2_x2u4y")
 shiny_sprite = ExtResource("2_x2u4y")

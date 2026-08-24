@@ -7,9 +7,9 @@
 species = "Deino"
 type_1 = "Void"
 type_2 = "Void"
-speed_min = 1.5
-speed_max = 3.0
-reverse_chance = 0.5
-speed_change_chance = 0.35000000000000003
+speed = "Slow"
+speed_variability = "Narrow"
+reversal_chance = "Evasive"
+speed_change = "Consistent"
 normal_sprite = ExtResource("2_60smq")
 shiny_sprite = ExtResource("2_60smq")

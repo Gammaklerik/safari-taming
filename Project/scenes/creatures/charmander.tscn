@@ -7,9 +7,7 @@
 species = "Charmander"
 type_1 = "Fire"
 type_2 = "Fire"
-speed_min = 1.75
-speed_max = 2.0
-reverse_chance = 0.15000000000000002
-speed_change_chance = 1.0
+reversal_chance = "Playful"
+speed_change = "Consistent"
 normal_sprite = ExtResource("2_ss8rw")
 shiny_sprite = ExtResource("2_ss8rw")

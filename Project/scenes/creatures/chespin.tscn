@@ -7,9 +7,8 @@
 species = "Chespin"
 type_1 = "Nature"
 type_2 = "Nature"
-speed_min = 0.5
-speed_max = 1.5
-reverse_chance = 0.3
-speed_change_chance = 0.18000000000000002
+speed = "Slow"
+speed_variability = "Narrow"
+speed_change = "Bizarre"
 normal_sprite = ExtResource("2_kn3xq")
 shiny_sprite = ExtResource("2_kn3xq")
