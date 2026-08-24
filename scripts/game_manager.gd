@@ -7,6 +7,8 @@ extends Node
 @onready var ui : Control = $ui/control
 @export var capture_list_element : PackedScene
 
+var temperments : Array[Dictionary] = [{"name": "Aloof", "reversal": 1.0, "speed": 1.0, "speed_change": 1.0}, {"name": "Blunt", "reversal": 1.0, "speed": 1.0, "speed_change": 1.0}, {"name": "Brave", "reversal": 0.9, "speed": 1.1, "speed_change": 1.0}, {"name": "Clumsy", "reversal": 1.0, "speed": 0.9, "speed_change": 1.1}, {"name": "Deceptive", "reversal": 1.1, "speed": 1.0, "speed_change": 0.9}, {"name": "Docile", "reversal": 1.0, "speed": 1.0, "speed_change": 1.0}, {"name": "Hasty", "reversal": 1.0, "speed": 1.1, "speed_change": 0.9}, {"name": "Patient", "reversal": 1.1, "speed": 0.9, "speed_change": 1.0}, {"name": "Rash", "reversal": 0.9, "speed": 1.0, "speed_change": 1.1}]
+
 var target_creature : CharacterBody2D
 var successes : int :
 	set(value):
@@ -32,7 +34,6 @@ func _process(delta: float) -> void:
 		timer_label.text = str(int(timer.time_left / 60)) + "m " + str(int(timer.time_left) - (int(timer.time_left / 60) * 60)) + "s Left"
 
 func attempt_seal():
-	print(sealing_circle.sealing_arrow.get_child(0).get_overlapping_areas())
 	if sealing_circle.sealing_arrow.get_child(0).get_overlapping_areas().has(sealing_circle.sealing_segment.get_child(0)):
 		successes += 1
 		sealing_circle.reset()
@@ -45,7 +46,7 @@ func attempt_seal():
 func capture(creature : CharacterBody2D):
 	player.captured_creatures.append(creature.get_info())
 	var new_creature : Panel = capture_list_element.instantiate()
-	new_creature.get_node("sprite").texture = creature.get("sprite")
+	new_creature.get_node("sprite").texture = creature.get_info().get("sprite")
 	new_creature.get_node("name").text = creature.get("species")
 	for star in creature.get("star_level"):
 		new_creature.get_node("stars").get_child(star).show()
@@ -81,6 +82,7 @@ func _on_expedition_timer_timeout() -> void:
 		var new_creature : Panel = capture_list_element.instantiate()
 		new_creature.get_node("sprite").texture = creature.get("sprite")
 		new_creature.get_node("name").text = creature.get("species")
+		new_creature.get_node("temperment").text = creature.get("temperment")
 		for star in creature.get("star_level"):
 			new_creature.get_node("stars").get_child(star).show()
 		ui.get_node("run_end_screen/captures/container").add_child(new_creature)

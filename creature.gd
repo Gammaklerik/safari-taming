@@ -12,6 +12,7 @@ extends CharacterBody2D
 @export_range(0.50, 10.0, 0.01) var speed_max : float = 0.5
 @export_range(0.01, 1.00, 0.01) var reverse_chance : float = 0.01
 @export_range(0.01, 1.00, 0.01) var speed_change_chance : float = 0.01
+var temperment : Dictionary
 var walk_speed : float = 50.0
 var direction : Vector2
 @export_group("Sprites")
@@ -19,7 +20,6 @@ var direction : Vector2
 @export var shiny_sprite : Texture2D
 var star_level : int
 var is_shiny : bool
-var temperment
 
 signal start_capture(creature)
 
@@ -46,6 +46,12 @@ func _ready() -> void:
 	else:
 		is_shiny = false
 		$sprite.texture = normal_sprite
+	
+	temperment = gm.temperments[randi_range(0, 8)]
+	speed_min *= temperment.get("speed")
+	speed_max *= temperment.get("speed")
+	reverse_chance *= temperment.get("reversal")
+	speed_change_chance *= temperment.get("speed_change")
 	
 	start_capture.connect(func(): gm.start_capture(self))
 
@@ -76,7 +82,7 @@ func _on_interact_area_body_entered(body: Node2D) -> void:
 		start_capture.emit()
 
 func get_info() -> Dictionary:
-	return {"nickname": species ,"species": species, "star_level": star_level, "is_shiny": is_shiny, "temperment": temperment, "sprite": $sprite.texture}
+	return {"nickname": species ,"species": species, "star_level": star_level, "is_shiny": is_shiny, "temperment": temperment.get("name"), "sprite": $sprite.texture}
 
 func _on_walk_timer_timeout() -> void:
 	direction = Vector2.ZERO

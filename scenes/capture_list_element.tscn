@@ -5,6 +5,9 @@
 [sub_resource type="LabelSettings" id="LabelSettings_ltalx"]
 font_size = 12
 
+[sub_resource type="LabelSettings" id="LabelSettings_ojo0p"]
+font_size = 10
+
 [node name="capture_01" type="Panel" unique_id=1119308564]
 custom_minimum_size = Vector2(243, 50)
 
@@ -35,7 +38,6 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "[creature name]"
 label_settings = SubResource("LabelSettings_ltalx")
-horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="stars" type="HBoxContainer" parent="." unique_id=1156092477]
@@ -92,3 +94,19 @@ layout_mode = 2
 texture = ExtResource("1_ojo0p")
 expand_mode = 1
 stretch_mode = 4
+
+[node name="temperment" type="Label" parent="." unique_id=425718886]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -73.0
+offset_top = -19.0
+offset_right = 21.5
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 0
+label_settings = SubResource("LabelSettings_ojo0p")
+vertical_alignment = 1
